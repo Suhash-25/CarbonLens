@@ -1,0 +1,10 @@
+.brandLink {
+  text-decoration: none;
+  /* Ensure it displays correctly in the header/footer */
+  display: inline-flex;
+  align-items: center;
+}
+
+.brandName {
+  color: var(--mantine-color-white);
+}

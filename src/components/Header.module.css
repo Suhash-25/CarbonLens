@@ -1,0 +1,33 @@
+.header {
+  position: fixed; /* Keep it at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Ensure it's above other content */
+  
+  /* Frosted glass effect for the header */
+  background-color: rgba(17, 24, 39, 0.4); /* Slightly more opaque than cards */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  padding-top: var(--mantine-spacing-md); /* Vertical padding */
+  padding-bottom: var(--mantine-spacing-md);
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; /* Ensures children take full height */
+}
+
+.link {
+  color: var(--mantine-color-gray-4); /* Light gray for links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--mantine-color-green-5); /* Hover effect matching theme */
+  }
+}

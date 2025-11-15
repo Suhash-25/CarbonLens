@@ -1,0 +1,17 @@
+.messagesContainer {
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.userMessage {
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.assistantMessage {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.textareaContainer {
+  flex: 1;
+}

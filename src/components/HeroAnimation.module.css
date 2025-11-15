@@ -1,0 +1,25 @@
+.paper {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mantine-color-dark-8, #1A1B1E);
+  border: 1px solid var(--mantine-color-dark-4, #373A40);
+  border-radius: var(--mantine-radius-md, 8px);
+}
+
+.box {
+  text-align: center;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--mantine-color-white, #FFF);
+  font-family: var(--mantine-font-family, sans-serif);
+}
+
+.dimmedText {
+  color: var(--mantine-color-dimmed, #909296);
+  font-family: var(--mantine-font-family, sans-serif);
+}

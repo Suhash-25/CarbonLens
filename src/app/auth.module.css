@@ -1,0 +1,44 @@
+.wrapper {
+  /* This line was the problem! It's now removed.
+    The BackgroundAnimation will provide the black background.
+  */
+  /* background-color: var(--mantine-color-black); */
+  
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden; /* Keeps animation contained */
+  
+  /* This centers the form card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.backLink {
+  position: absolute;
+  top: var(--mantine-spacing-lg);
+  left: var(--mantine-spacing-lg);
+  color: var(--mantine-color-gray-5);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 2; /* Sits on top of the animation */
+  transition: color 0.2s ease;
+}
+.backLink:hover {
+  color: var(--mantine-color-white);
+}
+
+.formCard {
+  /* The frosted glass card effect */
+  width: 100%;
+  max-width: 450px;
+  background-color: rgba(17, 24, 39, 0.3);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  position: relative; /* Ensures it sits on top of the animation */
+  z-index: 2; /* Sits on top of the animation */
+}

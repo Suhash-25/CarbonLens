@@ -1,0 +1,67 @@
+/* ADDED: New style for the main section title */
+.mainTitle {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg,#a78bfa,#60a5fa,#34d399);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--mantine-spacing-xl); /* More space below title */
+}
+
+/* CHANGED: Renamed .card to .featureCard and applied the 
+  frosted glass effect to match the Hero. 
+*/
+.featureCard {
+  height: 100%;
+  background-color: rgba(17, 24, 39, 0.3); /* Dark, semi-transparent background */
+  -webkit-backdrop-filter: blur(12px); /* Blur for Safari */
+  backdrop-filter: blur(12px); /* The blur effect */
+  border-radius: 16px; /* Rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  
+  /* ADDED: transition for a "wow" hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ADDED: The hover effect */
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This class is no longer used by the component */
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  margin: 0;
+  color: var(--mantine-color-white); /* CHANGED: Make title white */
+}
+
+.cardCopy {
+  margin-top: 6px;
+}
